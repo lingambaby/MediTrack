@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         StudentService studentService = new StudentService();
         CourseService courseService = new CourseService();
         EnrollmentService enrollmentService = new EnrollmentService();
