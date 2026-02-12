@@ -1,53 +1,61 @@
-# LearnTrack – Student & Course Management System
+# MediTrack – Clinic & Appointment Management System
 
-## Project Summary
-LearnTrack is a console-based Student & Course Management System built using Core Java.
-It allows administrators to manage students, courses, and enrollments through a
-menu-driven console application.
+## 📌 Project Overview
+MediTrack is a Java-based console application developed to manage doctors, patients, appointments, and billing in a clinic environment.
 
-This project is designed to strengthen Core Java fundamentals including OOP,
-collections, exception handling, and clean code practices.
+This project demonstrates core and advanced Java concepts including OOP, collections, exception handling, file I/O, generics, and design patterns.
 
-## Features
-### Student Management
-- Add new students
-- View all students
-- Search student by ID
-- Deactivate a student (soft delete)
+---
 
-### Course Management
-- Add new courses
-- View all courses
-- Activate / Deactivate courses
+## 🏗 Project Structure
 
-### Enrollment Management
-- Enroll students into courses
-- View enrollments for a student
-- Mark enrollment as COMPLETED or CANCELLED
+Base Package:
+com.airtribe.meditrack
 
-## Technologies Used
-- Java (Core Java)
-- JDK 17 (or your version)
-- ArrayList
-- Console-based UI
+src/main/java/com/airtribe/meditrack/
+│
+├── constants
+├── entity
+├── exception
+├── interfaces
+├── service
+├── test
+└── util
 
+---
 
-## Package Structure
-- entity – Core domain classes (Student, Course, Enrollment)
-- service – Business logic
-- ui – Console-based menu and user interaction
-- exception – Custom exceptions
-- util – Utility/helper classes
-## Class Diagram
-Person
- └── Student
+## 🎯 Features
 
-Student → Enrollment ← Course
+✔ Patient & Doctor CRUD  
+✔ Appointment booking & cancellation  
+✔ Billing with tax calculation  
+✔ Enum-based appointment status  
+✔ Immutable BillSummary  
+✔ Custom exceptions  
+✔ Generic DataStore<T>  
+✔ Manual TestRunner  
 
-## How to Compile and Run
-1. Open the project folder on your system
-2. Navigate to the src folder
-3. Compile the project:
-   javac com/airtribe/learntrack/Main.java
-4. Run the application:
-   java com.airtribe.learntrack.ui.Main
+---
+
+## ⚙️ How to Run
+
+Compile:
+javac src/main/java/com/airtribe/meditrack/Main.java
+
+Run:
+java com.airtribe.meditrack.Main
+
+---
+
+## 📂 Documentation
+
+See docs/ folder for:
+
+- Setup_Instructions.md
+- JVM_Report.md
+- Design_Decisions.md
+
+---
+
+## 👨‍💻 Author
+Lingam Baby
