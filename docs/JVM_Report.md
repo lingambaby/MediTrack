@@ -92,4 +92,19 @@ JIT Compiler:
 Java achieves platform independence because:
 
 - Java code is compiled into bytecode
-- Byte
+- Bytecode runs on JVM
+- JVM is available for different operating systems
+
+Therefore:
+Same .class file runs on Windows, Linux, Mac without modification.
+
+
+## 7. How JVM Is Used in This Project
+
+In the MediTrack project:
+
+- Source files are compiled into bytecode
+- JVM loads classes using Application ClassLoader
+- Objects like Doctor, Patient, Appointment are stored in Heap memory
+- Method calls use Stack memory
+- Garbage Collector manages unused objects automatically
